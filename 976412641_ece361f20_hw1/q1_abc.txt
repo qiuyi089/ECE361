@@ -1,0 +1,57 @@
+1.A
+
+boolean has_zero(int a[], int n)
+{
+	int i;
+
+	for (i = 0; i < n, i++) {
+		return (a[i] != 0 ) ? false : true;
+	}
+}
+
+The error is a syntax error in the for loop, one of the condition is being seperate by a "," rather than an ";"
+which cause an compile error. In order to fix this you just need to change that "," to an ";" and it will be 
+compile and run. Also there not nuch thing as boolean as the define type for C, you have to use bool instead 
+of boolean if you want the function to return true or false.
+
+bool has_zero(int a[], int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++) {
+		return (a[i] != 0 ) ? false : true;
+	}
+}
+
+1.B
+
+b) Source code for functions: This should not be in the header file because the header file 
+should only be including declaration only like function protype and structure prototype. 
+It should not be implementing anything.
+e) Variables: shouldn't be in header file at all unless it a global variable that is needed to be 
+share with other file otherwise it don't belong in header.
+
+1.C
+
+In total the sum() is being call 4 times including the call from main().
+
+1st call (n = 3): 
+The function is being call from main program and main pass in the array of data and the number of element
+the array. Then we enter the function and start performing the task, the function first check for n if 
+it equal to 0. Since in the invocation n = 3 not 0 so it go to the else statement and perform the task.
+Which force it to call another sum() since n = 3, so it decrease n by 1 make n = 2 and pass that into the
+next sum() being call. 
+
+2nd call(n = 2):
+The function is being call from the previous invocation of sum() where n = 3. it check for if n = 0 in this 
+invocation, but n = 2 so it jump to the else and execute the code there. It decrease n by 1, and then pass 
+the array and n to the next invocation.
+
+3rd call(n = 1):
+The function check for if n = 0, but n is 1 in this case so it excute the code in the else statement. It 
+decrease n by 1 and then call another sum() passing in the array and n. 
+
+4th call(n = 0):
+The function check for if n = 0 and in this invocation n is 0 hence it return the number in the 0 index back
+to the previous invocation and end the recursion.
+

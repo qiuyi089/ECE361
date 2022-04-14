@@ -1,0 +1,82 @@
+typedef struct color {
+	int red;
+	int green;
+	int blue;
+} color_t;
+
+// returns a color_t struct containing the specified values
+// for the red, green, and blue color members.  
+// if an argument is < 0 that color member is set to zero.
+// if an argument is > 255 that color members is set to 255
+color_t makeColor(int red, int green, int blue) {
+	//I make a temporary struct that will hold the new data and then being return back to main.
+	color_t temp;
+
+	//I check for the red condition to see if it less than 0 or greater than 255
+	//if it less than 0 then i put the red as 0 and if it greater than 255 i put it as 
+	//255 otherwise i just set the temp.red to red.
+	if(red < 0)
+		temp.red = 0;
+	else if(red > 255)
+		temp.red = 255;
+	else 
+		temp.red = red;
+	
+	//I check for the green condition to see if it less than 0 or greater than 255
+	//if it less than 0 then i put the green as 0 and if it greater than 255 i put it as 
+	//255 otherwise i just set the temp.green to green.
+	if(green < 0)
+		temp.green = 0;
+	else if(green > 255)
+		temp.green = 255;
+	else 
+		temp.green = green;
+	
+	//I check for the blue condition to see if it less than 0 or greater than 255
+	//if it less than 0 then i put the blue as 0 and if it greater than 255 i put it as 
+	//255 otherwise i just set the temp.blue to blue.
+	if(blue < 0)
+		temp.blue = 0;
+	else if(blue > 255)
+		temp.blue = 255;
+	else 
+		temp.blue = blue;
+	
+	return temp;
+	
+}
+
+// returns the value of the red member of the 
+int getRed(color_t c) {
+	//since it just returning the member I just access the member of that struct and return it back
+	//to what call the getRed().
+
+	return c.red;
+}
+
+// returns true if all of the members of both color_t structs
+// are the same
+bool equalColor(color_t c1, color_t c2) {
+	//So i just check all the element of both struct to see if red of c1 and red of c2 is the same as each
+	//other. Then I pipe it all with the and statement so that if one of them is false then the 2
+	// struct are not the same then i return false if it not the same otherwise it will be true if all 3
+	//condition are true.
+		if(c1.red==c2.red && c1.green==c2.green && c1.blue==c2.blue)
+			return true;
+		else
+			return false;
+
+}
+
+// returns a color_t struct that represents a darker version of the
+// color in to color_t argument c except that each member
+// has been multiplied by 0.7 with the result truncated to an integer
+color_t makeDarkerColor(color_t c) {
+	//All i do is take each of the element in the struct and times it by 0.7 and then 
+	//return the struct back.
+	c.red = c.red * 0.7;
+	c.green = c.green * 0.7;
+	c.blue = c.blue * 0.7;
+	return c;
+
+}

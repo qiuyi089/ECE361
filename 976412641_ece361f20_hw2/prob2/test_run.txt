@@ -1,0 +1,18 @@
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_q2$ ./a.out
+Enter your RPN: 3 4 - 5 + =
+Top element is 4
+Enter your RPN: 1 2 3 + - =
+Top element is -4
+Enter your RPN: 1 2 3 * + =
+Top element is 7
+Enter your RPN: 5 8 * 4 6 - / =
+Top element is -20
+Enter your RPN: 5 8 * 4 9 - / =
+Top element is -8
+Enter your RPN: 8 2 / 5 + =
+Top element is 9
+Enter your RPN: q
+You didnt enter in correct input program will stop. 
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_q2$ whoami
+dung4
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_q2$

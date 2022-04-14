@@ -1,0 +1,23 @@
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ whoami
+dung4
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: 5 50 30 90 20 80
+The min is 20
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: -1 1 2 3 4 5 
+your number is either negative or a zero.
+Program will now terminate.
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: 0 1 2 3 4 5
+your number is either negative or a zero.
+Program will now terminate.
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: 7 -2 50 10 6 90 60 77
+The min is -2 
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: 8 2 6 45 90 99 78 20 10 
+The min is 2
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$ ./a.out
+Enter your input: 3 -1 -2 -6
+The min is -6 
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_code$

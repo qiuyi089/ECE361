@@ -1,0 +1,39 @@
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_q3$ whoami
+dung4
+dung4@ada:~/Documents/ECE361/homework-2-dung4/hw2_q3$ ./a.out
+
+
+======STARTING QUEUE TESTS======
+
+initialize a queue.
+Queue is overflow.
+Queue is overflow.
+The 0 element is c
+The 1 element is g
+The 2 element is t
+The 3 element is Y
+The 4 element is H
+The 5 element is X
+The 6 element is r
+The 7 element is m
+The 8 element is n
+The 9 element is y
+----List Queue Contents Test Successful
+----Queue Full Test Successful
+----Dequeue Test Successful
+Empty the queue
+The queue is empty.
+The queue is empty.
+Queue should be empty - nothing displayed
+The -1 element is
+----Queue Empty Test Successful
+---Testing partial fills---
+   Adding p and Z to queue
+The 0 element is p
+The 1 element is Z
+   Removing p
+The 1 element is Z
+   Adding ! to queue
+The 1 element is Z
+The 2 element is !
+----Queue Test Complete
